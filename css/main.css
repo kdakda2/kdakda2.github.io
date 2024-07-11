@@ -1,0 +1,46 @@
+body{background: white;
+     margin: 0;
+     max-width:100%;
+   overflow-x: hidden;}
+a{color:black;}
+.main_logo{margin:50px auto 0px auto;
+           display:block;}
+nav {display: flex;
+     justify-content: center;
+     margin: 50px -43px;
+     color: black;
+     font-size: 24px;
+     font-family: "Playfair Display", serif;
+     font-weight: 400;}
+nav a {margin: 0 43px;
+       text-decoration: none;
+       position: relative;}
+nav a::before {content: "";
+               position: absolute;
+               display: block;
+               width: 100%;
+               height: 1px;
+               bottom: 0;
+               left: 0;
+               background-color: #000;
+               transform: scaleX(0);
+               transition: transform 0.5s ease;}
+nav a:hover::before {transform: scaleX(1);}
+.social{display: flex;
+        margin: 0px -12.5px;
+        justify-content: center;}
+.social_item{margin: 0 12.5px;
+             opacity:0.35;
+             transition: 0.5s;}
+.social_item:hover{opacity:1}
+
+footer{
+  width:100%;height: 100px;}
+.footer_a{
+  font-family: "Rubik", sans-serif;
+  font: 24px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding:15px;
+} 
